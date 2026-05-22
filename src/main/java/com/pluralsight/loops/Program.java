@@ -32,6 +32,16 @@ static void main()
          System.out.println("The average Age: " + averageAge);
 
 
+         Person oldestAge = people.get(0);
+         for(Person person : people) //This will go through each Person object in the people collection
+         {
+           if (person.getAge() > oldestAge.getAge()) //This compares the age to the current oldest person's age
+           {
+            oldestAge = person;
+           }
+
+         }
+
 
 
 
