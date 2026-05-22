@@ -43,19 +43,17 @@ static void main()
 
          System.out.println("The oldest age is: " + oldestAge.toString());
 
+         Person youngestAge = people.get(0);
+         for(Person person : people)
+         {
+           if (person.getAge() < youngestAge.getAge())
+           {
+            youngestAge = person;
+           }
 
+         }
 
-
-
-
-
-
-
-
-
-
-
-
+        System.out.println("The youngest age is: " + youngestAge.getAge());
 
 
     }
