@@ -19,13 +19,28 @@ static void main()
         System.out.println("Please enter a first or last name to search: ");
         String name = scanner.nextLine().trim().toLowerCase();
 
+         int age = 0;
+         int count = 0;
+
+         for(Person person : people)
+         {
+          age += person.getAge();
+          count++;
+         }
+
+         int averageAge = age / count;
+         System.out.println("The average Age: " + averageAge);
 
 
 
 
 
 
-        }
+
+
+
+
+
 
 
 
