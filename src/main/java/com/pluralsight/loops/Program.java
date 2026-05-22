@@ -1,4 +1,4 @@
-import com.pluralsight.loops.Person;
+import com.pluralsight.Person;
 
 static void main()
     {
